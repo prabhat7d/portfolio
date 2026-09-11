@@ -115,11 +115,11 @@ const WhatIDo = () => {
               </div>
 
               <div>
-                <h3 className="text-xs font-semibold text-[#102344] lg:text-[13px]">
+                <h3 className="text-xs font-semibold text-[#102344] lg:text-sm">
                   {capability.title}
                 </h3>
 
-                <p className="mt-2 text-[11px] leading-[1.55] text-slate-600 lg:text-xs">
+                <p className="mt-2 text-xs leading-[1.55] text-slate-600 lg:text-xs">
                   {capability.description}
                 </p>
               </div>

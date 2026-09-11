@@ -119,7 +119,7 @@ const Work = () => {
       <div className="mx-auto max-w-[1440px] px-6 py-8 lg:px-10 lg:py-10">
         {/* Header */}
         <div>
-          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
             Projects
           </p>
 
@@ -144,7 +144,7 @@ const Work = () => {
                 type="button"
                 onClick={() => setActiveFilter(filter)}
                 className={[
-                  "rounded-full px-3.5 py-1.5 text-[10px] font-medium transition-colors",
+                  "rounded-full px-3.5 py-1.5 text-xs font-medium transition-colors",
                   isActive
                     ? "bg-[#1769ff] text-white"
                     : "bg-[#f1f5fa] text-slate-600 hover:bg-[#e7eef8]",
@@ -182,7 +182,7 @@ const Work = () => {
                   {project.types.map((type) => (
                     <span
                       key={type}
-                      className="rounded-md bg-white/95 px-2 py-1 text-[9px] font-medium text-slate-600 shadow-sm"
+                      className="rounded-md bg-white/95 px-2 py-1 text-xs font-medium text-slate-600 shadow-sm"
                     >
                       {type}
                     </span>
@@ -197,16 +197,16 @@ const Work = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h2 className="text-[14px] font-semibold leading-tight text-[#102344]">
+                  <h2 className="text-sm font-semibold leading-tight text-[#102344]">
                     {project.name}
                   </h2>
                 </a>
 
-                <p className="mt-1 text-[11px] font-medium text-blue-700">
+                <p className="mt-1 text-xs font-medium text-blue-700">
                   {project.category}
                 </p>
 
-                <p className="mt-2.5 text-[10px] leading-[1.6] text-slate-500 sm:text-[11px]">
+                <p className="mt-2.5 text-xs leading-[1.6] text-slate-500 sm:text-xs">
                   {project.description}
                 </p>
 
@@ -216,7 +216,7 @@ const Work = () => {
                     {project.technologies.map((technology) => (
                       <span
                         key={technology}
-                        className="rounded-md bg-[#f1f5fa] px-2 py-1 text-[9px] font-medium text-slate-600"
+                        className="rounded-md bg-[#f1f5fa] px-2 py-1 text-xs font-medium text-slate-600"
                       >
                         {technology}
                       </span>

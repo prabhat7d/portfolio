@@ -19,7 +19,7 @@ const Footer = () => {
                 Prabhat Kumar Gautam
               </p>
 
-              <p className="mt-1 text-[10px] text-slate-500">
+              <p className="mt-1 text-xs text-slate-500">
                 Senior Full Stack Engineer
               </p>
             </div>
@@ -29,42 +29,42 @@ const Footer = () => {
           <nav className="flex flex-wrap items-center gap-5">
             <Link
               to="/work"
-              className="text-[11px] text-slate-600 transition-colors hover:text-blue-600"
+              className="text-xs text-slate-600 transition-colors hover:text-blue-600"
             >
               Work
             </Link>
 
             <Link
               to="/experience"
-              className="text-[11px] text-slate-600 transition-colors hover:text-blue-600"
+              className="text-xs text-slate-600 transition-colors hover:text-blue-600"
             >
               Experience
             </Link>
 
             <Link
               to="/skills"
-              className="text-[11px] text-slate-600 transition-colors hover:text-blue-600"
+              className="text-xs text-slate-600 transition-colors hover:text-blue-600"
             >
               Skills
             </Link>
 
             <Link
               to="/about"
-              className="text-[11px] text-slate-600 transition-colors hover:text-blue-600"
+              className="text-xs text-slate-600 transition-colors hover:text-blue-600"
             >
               About
             </Link>
 
             <Link
               to="/contact"
-              className="text-[11px] text-slate-600 transition-colors hover:text-blue-600"
+              className="text-xs text-slate-600 transition-colors hover:text-blue-600"
             >
               Contact
             </Link>
           </nav>
 
           {/* Copyright */}
-          <p className="text-[10px] text-slate-400 sm:text-right">
+          <p className="text-xs text-slate-400 sm:text-right">
             © {year} Prabhat Kumar Gautam. All rights reserved.
           </p>
         </div>

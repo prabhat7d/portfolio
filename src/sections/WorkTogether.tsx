@@ -7,7 +7,7 @@ const WorkTogether = () => {
         <div className="flex flex-col gap-6 rounded-xl bg-[#f1f7ff] px-6 py-6 sm:px-8 lg:flex-row lg:items-center lg:justify-between lg:px-10">
           {/* Content */}
           <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#21458a]">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#21458a]">
               Let's Work Together
             </p>
 

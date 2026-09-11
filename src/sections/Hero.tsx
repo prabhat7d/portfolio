@@ -11,7 +11,7 @@ const Hero = () => {
             <div className="mb-4 flex items-center gap-2">
               <span className="h-2 w-2 rounded-full bg-green-500" />
 
-              <span className="text-[11px] font-medium uppercase tracking-[0.1em] text-slate-500">
+              <span className="text-xs font-medium uppercase tracking-[0.1em] text-slate-500">
                 Open to opportunities
               </span>
             </div>

@@ -187,7 +187,7 @@ const About = () => {
         <div className="grid items-center gap-8 lg:grid-cols-[1fr_420px]">
           {/* Left content */}
           <div>
-            <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
               About
             </p>
 
@@ -235,7 +235,7 @@ const About = () => {
 
               {/* Content */}
               <div className="relative z-10">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
                   Engineering Snapshot
                 </p>
 
@@ -249,7 +249,7 @@ const About = () => {
                     <p className="text-xl font-semibold tracking-[-0.02em] text-[#102344]">
                       8+
                     </p>
-                    <p className="mt-0.5 text-[10px] text-slate-500">
+                    <p className="mt-0.5 text-xs text-slate-500">
                       Years Experience
                     </p>
                   </div>
@@ -258,7 +258,7 @@ const About = () => {
                     <p className="text-xl font-semibold tracking-[-0.02em] text-[#102344]">
                       70+
                     </p>
-                    <p className="mt-0.5 text-[10px] text-slate-500">
+                    <p className="mt-0.5 text-xs text-slate-500">
                       Modules Delivered
                     </p>
                   </div>
@@ -267,7 +267,7 @@ const About = () => {
                     <p className="text-xl font-semibold tracking-[-0.02em] text-[#102344]">
                       10M+
                     </p>
-                    <p className="mt-0.5 text-[10px] text-slate-500">
+                    <p className="mt-0.5 text-xs text-slate-500">
                       Products Handled
                     </p>
                   </div>
@@ -276,7 +276,7 @@ const About = () => {
                     <p className="text-xl font-semibold tracking-[-0.02em] text-[#102344]">
                       40+
                     </p>
-                    <p className="mt-0.5 text-[10px] text-slate-500">
+                    <p className="mt-0.5 text-xs text-slate-500">
                       Developers Led
                     </p>
                   </div>
@@ -286,7 +286,7 @@ const About = () => {
               {/* Bottom accent */}
               <div className="absolute bottom-5 right-6 flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                <span className="text-[9px] font-medium text-slate-500">
+                <span className="text-xs font-medium text-slate-500">
                   Always learning. Always building.
                 </span>
               </div>
@@ -310,11 +310,11 @@ const About = () => {
               <div className="shrink-0 text-blue-600">{item.icon}</div>
 
               <div>
-                <h2 className="text-[11px] font-semibold text-[#102344]">
+                <h2 className="text-xs font-semibold text-[#102344]">
                   {item.title}
                 </h2>
 
-                <p className="mt-1 text-[10px] leading-4 text-slate-500">
+                <p className="mt-1 text-xs leading-4 text-slate-500">
                   {item.description}
                 </p>
               </div>
@@ -324,7 +324,7 @@ const About = () => {
 
         {/* Outside of Work */}
         <div className="mt-6">
-          <h2 className="text-[15px] font-semibold tracking-[-0.02em] text-[#102344]">
+          <h2 className="text-base font-semibold tracking-[-0.02em] text-[#102344]">
             Outside of Work
           </h2>
 
@@ -340,11 +340,11 @@ const About = () => {
                 <div className="text-blue-600">{item.icon}</div>
 
                 <div>
-                  <h3 className="text-[11px] font-semibold text-[#102344]">
+                  <h3 className="text-xs font-semibold text-[#102344]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-0.5 text-[9px] text-slate-500">
+                  <p className="mt-0.5 text-xs text-slate-500">
                     {item.description}
                   </p>
                 </div>
@@ -360,13 +360,13 @@ const About = () => {
               “
             </span>
 
-            <p className="pt-1 text-[11px] font-medium leading-5 text-[#102344]">
+            <p className="pt-1 text-xs font-medium leading-5 text-[#102344]">
               I believe in building simple, scalable and meaningful solutions
               that make a real difference.
             </p>
           </div>
 
-          <p className="hidden shrink-0 text-[9px] text-slate-500 sm:block">
+          <p className="hidden shrink-0 text-xs text-slate-500 sm:block">
             — Prabhat Kumar Gautam
           </p>
         </div>

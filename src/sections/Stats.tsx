@@ -116,7 +116,7 @@ const Stats = () => {
                   {stat.value}
                 </p>
 
-                <p className="mt-1 text-[11px] text-slate-500 lg:text-xs">
+                <p className="mt-1 text-xs text-slate-500 lg:text-xs">
                   {stat.label}
                 </p>
               </div>

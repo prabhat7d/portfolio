@@ -1,5 +1,5 @@
-import Hero from "../components/Hero";
-import Stats from "../components/Stats";
+import Hero from "../sections/Hero";
+import Stats from "../sections/Stats";
 
 import FeaturedProjects from "../sections/FeaturedProjects";
 import WhatIDo from "../sections/WhatIDo";
