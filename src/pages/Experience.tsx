@@ -5,7 +5,7 @@ const experiences = [
     role: "Senior Engineer",
     description:
       "Leading full-stack development for CoreNeural, an enterprise AI data-protection platform. Designed scalable backend rules engine and secure conversational UI.",
-    technologies: ["Laravel", "Next.js", "AWS", "Redis", "Docker"],
+    technologies: ["Laravel", "Next.js", "React", "AWS", "Docker"],
     highlights: [
       "Built and optimized AI data-protection platform (CoreNeural)",
       "Designed scalable backend rules engine and secure conversational UI",
@@ -34,7 +34,7 @@ const experiences = [
     role: "Junior PHP Developer",
     description:
       "Contributed to enhancements and bug fixes across client projects. Developed early hands-on experience in PHP, MVC and backend workflows.",
-    technologies: ["PHP", "Laravel", "MySQL"],
+    technologies: ["PHP", "MySQL"],
     highlights: [
       "Worked on client projects and feature enhancements",
       "Gained hands-on experience in PHP, MVC and backend workflows",
@@ -48,7 +48,7 @@ const Experience = () => {
       <div className="mx-auto max-w-[1440px] px-6 py-8 lg:px-10 lg:py-10">
         {/* Header */}
         <div className="mb-6">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
             Experience
           </p>
 
@@ -65,20 +65,20 @@ const Experience = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Timeline line */}
-          <div className="absolute bottom-5 left-[9px] top-5 w-px bg-blue-200" />
+          <div className="absolute bottom-5 left-[5px] top-5 w-px bg-blue-200" />
 
           <div className="space-y-5">
             {experiences.map((experience) => (
               <article
                 key={`${experience.company}-${experience.period}`}
-                className="relative grid grid-cols-[115px_1fr] gap-4 pl-7 lg:grid-cols-[125px_1fr] lg:gap-5"
+                className="relative grid grid-cols-[115px_1fr] items-start gap-4 pl-7 lg:grid-cols-[125px_1fr] lg:gap-5"
               >
                 {/* Timeline dot */}
-                <span className="absolute left-0 top-2.5 h-[11px] w-[11px] rounded-full border-2 border-blue-400 bg-white ring-2 ring-blue-100" />
+                <span className="absolute left-0 top-[5px] h-[11px] w-[11px] rounded-full border-2 border-blue-500 bg-blue-500 ring-2 ring-blue-100" />
 
                 {/* Period */}
                 <div className="pt-1">
-                  <p className="text-[10px] font-medium leading-4 text-slate-500 sm:text-[11px]">
+                  <p className="text-xs font-medium leading-4 text-slate-500 sm:text-xs">
                     {experience.period}
                   </p>
                 </div>
@@ -88,11 +88,11 @@ const Experience = () => {
                   {/* Top row */}
                   <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
                     <div>
-                      <h2 className="text-[14px] font-semibold leading-5 text-[#102344]">
+                      <h2 className="text-sm font-semibold leading-5 text-[#102344]">
                         {experience.company}
                       </h2>
 
-                      <p className="mt-0.5 text-[12px] font-semibold leading-4 text-[#102344]">
+                      <p className="mt-0.5 text-xs font-semibold leading-4 text-[#102344]">
                         {experience.role}
                       </p>
                     </div>
@@ -102,7 +102,7 @@ const Experience = () => {
                       {experience.technologies.map((technology) => (
                         <span
                           key={technology}
-                          className="rounded-md bg-[#f1f5fa] px-2 py-1 text-[9px] font-medium text-slate-600"
+                          className="rounded-md bg-[#f1f5fa] px-2 py-1 text-xs font-medium text-slate-600"
                         >
                           {technology}
                         </span>
@@ -111,7 +111,7 @@ const Experience = () => {
                   </div>
 
                   {/* Description */}
-                  <p className="mt-2.5 max-w-4xl text-[10px] leading-[1.55] text-slate-600 sm:text-[11px]">
+                  <p className="mt-2.5 max-w-4xl text-xs leading-[1.55] text-slate-600 sm:text-xs">
                     {experience.description}
                   </p>
 
@@ -120,7 +120,7 @@ const Experience = () => {
                     {experience.highlights.map((highlight) => (
                       <li
                         key={highlight}
-                        className="relative pl-3 text-[10px] leading-[1.5] text-slate-600 sm:text-[11px]"
+                        className="relative pl-3 text-xs leading-[1.5] text-slate-600 sm:text-xs"
                       >
                         <span className="absolute left-0 top-[6px] h-1 w-1 rounded-full bg-blue-500" />
                         {highlight}

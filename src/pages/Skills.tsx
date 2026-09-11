@@ -193,12 +193,12 @@ const QuoteCard = () => {
       <div>
         <span className="text-3xl font-bold leading-none text-blue-600">“</span>
 
-        <p className="mt-1 text-[12px] font-medium leading-5 text-[#102344]">
+        <p className="mt-1 text-xs font-medium leading-5 text-[#102344]">
           Technology changes, but good engineering principles always stay.
         </p>
       </div>
 
-      <p className="text-right text-[10px] text-slate-500">
+      <p className="text-right text-xs text-slate-500">
         — Prabhat Kumar Gautam
       </p>
     </div>
@@ -211,7 +211,7 @@ const Skills = () => {
       <div className="mx-auto max-w-[1440px] px-6 py-8 lg:px-10 lg:py-10">
         {/* Header */}
         <div className="mb-6">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
             Skills
           </p>
 
@@ -234,12 +234,12 @@ const Skills = () => {
               <div className="flex items-center gap-2.5">
                 <div className="text-blue-600">{group.icon}</div>
 
-                <h2 className="text-[12px] font-semibold text-[#102344]">
+                <h2 className="text-xs font-semibold text-[#102344]">
                   {group.title}
                 </h2>
               </div>
 
-              <p className="mt-3 text-[10px] leading-[1.65] text-slate-500 sm:text-[11px]">
+              <p className="mt-3 text-xs leading-[1.65] text-slate-500 sm:text-xs">
                 {group.skills}
               </p>
             </article>

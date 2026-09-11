@@ -1,12 +1,26 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Contact = () => {
+  const [phoneCopied, setPhoneCopied] = useState(false);
+
+  const phoneNumber = "+91 8920272591";
+
+  const copyPhone = async () => {
+    await navigator.clipboard.writeText(phoneNumber);
+
+    setPhoneCopied(true);
+
+    setTimeout(() => {
+      setPhoneCopied(false);
+    }, 1500);
+  };
   return (
     <section className="min-h-[calc(100vh-60px)] bg-white">
       <div className="mx-auto max-w-[1440px] px-6 py-8 lg:px-10 lg:py-10">
         {/* Header */}
         <div className="max-w-2xl">
-          <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-blue-600">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue-600">
             Contact
           </p>
 
@@ -29,6 +43,43 @@ const Contact = () => {
             </h2>
 
             <div className="mt-5 space-y-4">
+              {/* Phone */}
+              <button
+                type="button"
+                onClick={copyPhone}
+                className="group relative flex w-full items-center gap-3 rounded-md border border-slate-100 p-3 text-left transition-colors hover:bg-[#f7faff]"
+              >
+                <div className="flex h-9 w-9 items-center justify-center rounded-md bg-[#eef5ff] text-blue-600">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L8 9.73a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92Z" />
+                  </svg>
+                </div>
+
+                <div>
+                  <p className="text-xs text-slate-500">Phone</p>
+                  <p className="mt-0.5 text-xs font-medium text-[#102344] group-hover:text-blue-600">
+                    {phoneNumber}
+                  </p>
+                </div>
+
+                {/* Tooltip */}
+                {phoneCopied && (
+                  <span className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md bg-[#102344] px-2.5 py-1 text-[11px] font-medium text-white shadow-sm">
+                    Copied!
+                  </span>
+                )}
+              </button>
+
               {/* Email */}
               <a
                 href="mailto:prabhatkumargautam1997@gmail.com"
@@ -52,7 +103,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <p className="text-[10px] text-slate-500">Email</p>
+                  <p className="text-xs text-slate-500">Email</p>
                   <p className="mt-0.5 text-xs font-medium text-[#102344] group-hover:text-blue-600">
                     prabhatkumargautam1997@gmail.com
                   </p>
@@ -79,7 +130,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <p className="text-[10px] text-slate-500">LinkedIn</p>
+                  <p className="text-xs text-slate-500">LinkedIn</p>
                   <p className="mt-0.5 text-xs font-medium text-[#102344] group-hover:text-blue-600">
                     Connect with me on LinkedIn
                   </p>
@@ -106,7 +157,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <p className="text-[10px] text-slate-500">GitHub</p>
+                  <p className="text-xs text-slate-500">GitHub</p>
                   <p className="mt-0.5 text-xs font-medium text-[#102344] group-hover:text-blue-600">
                     View my projects and code
                   </p>
@@ -121,7 +172,7 @@ const Contact = () => {
               <div className="flex items-center gap-2">
                 <span className="h-2 w-2 rounded-full bg-green-500" />
 
-                <p className="text-[10px] font-semibold uppercase tracking-[0.12em] text-slate-500">
+                <p className="text-xs font-semibold uppercase tracking-[0.12em] text-slate-500">
                   Currently available
                 </p>
               </div>
@@ -130,7 +181,7 @@ const Contact = () => {
                 Open to new opportunities.
               </h2>
 
-              <p className="mt-3 text-[11px] leading-5 text-slate-600">
+              <p className="mt-3 text-xs leading-5 text-slate-600">
                 I'm open to discussing full-time opportunities, interesting
                 products, technical challenges, and collaborations.
               </p>
@@ -138,7 +189,7 @@ const Contact = () => {
 
             <Link
               to="/work"
-              className="mt-6 inline-flex w-fit items-center gap-1.5 rounded-md bg-[#21458a] px-4 py-2.5 text-[10px] font-semibold text-white transition-colors hover:bg-[#193a78]"
+              className="mt-6 inline-flex w-fit items-center gap-1.5 rounded-md bg-[#21458a] px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:bg-[#193a78]"
             >
               Explore My Work
               <span className="text-sm">→</span>
@@ -148,7 +199,7 @@ const Contact = () => {
 
         {/* Bottom Statement */}
         <div className="mt-5 border-t border-slate-100 pt-5">
-          <p className="text-[11px] leading-5 text-slate-500">
+          <p className="text-xs leading-5 text-slate-500">
             Whether you're building a new product, scaling an existing system,
             or looking for an experienced engineer to join your team, feel free
             to reach out.

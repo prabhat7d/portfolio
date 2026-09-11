@@ -119,7 +119,7 @@ const FeaturedProjects = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <h3 className="text-[15px] font-semibold leading-tight text-[#102344]">
+                  <h3 className="text-base font-semibold leading-tight text-[#102344]">
                     {project.name}
                   </h3>
                 </a>
@@ -137,7 +137,7 @@ const FeaturedProjects = () => {
                   {project.technologies.map((technology) => (
                     <span
                       key={technology}
-                      className="rounded-md bg-[#f1f5fa] px-2 py-1 text-[10px] font-medium text-slate-600"
+                      className="rounded-md bg-[#f1f5fa] px-2 py-1 text-xs font-medium text-slate-600"
                     >
                       {technology}
                     </span>

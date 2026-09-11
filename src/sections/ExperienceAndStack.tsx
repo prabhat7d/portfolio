@@ -137,21 +137,21 @@ const ExperienceAndStack = () => {
                     {/* Header */}
                     <div className="flex flex-col justify-between gap-1 sm:flex-row sm:items-start">
                       <div>
-                        <h3 className="text-[13px] font-semibold leading-tight text-[#102344]">
+                        <h3 className="text-sm font-semibold leading-tight text-[#102344]">
                           {experience.company}
                         </h3>
 
-                        <p className="mt-0.5 text-[12px] font-medium text-[#102344]">
+                        <p className="mt-0.5 text-xs font-medium text-[#102344]">
                           {experience.role}
                         </p>
                       </div>
 
-                      <span className="text-[11px] text-slate-500">
+                      <span className="text-xs text-slate-500">
                         {experience.period}
                       </span>
                     </div>
 
-                    <p className="mt-1.5 max-w-xl text-[11px] leading-[1.55] text-slate-500 lg:text-xs">
+                    <p className="mt-1.5 max-w-xl text-xs leading-[1.55] text-slate-500 lg:text-xs">
                       {experience.description}
                     </p>
                   </div>
@@ -189,7 +189,7 @@ const ExperienceAndStack = () => {
                       {item.category}
                     </h3>
 
-                    <p className="text-[11px] leading-4 text-slate-500">
+                    <p className="text-xs leading-4 text-slate-500">
                       {item.technologies}
                     </p>
                   </div>
