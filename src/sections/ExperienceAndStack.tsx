@@ -26,7 +26,7 @@ const techStack = [
   {
     category: "Frontend",
     technologies:
-      "React, Next.js, Vue.js, TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS",
+      "React, Next.js, Vue.js, TypeScript, Redux Toolkit, TanStack Query, React Hook Form, Zod, Tailwind CSS",
     icon: (
       <svg
         width="24"

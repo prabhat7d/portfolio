@@ -19,7 +19,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "React.js, Next.js, Vue.js, TypeScript, JavaScript, Redux Toolkit, TanStack Query, Tailwind CSS, jQuery",
+      "React.js, Next.js, Vue.js, TypeScript, JavaScript, Redux Toolkit, TanStack Query, React Hook Form, Zod, Tailwind CSS, jQuery",
   },
   {
     title: "Backend Development",
