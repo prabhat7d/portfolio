@@ -19,7 +19,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "React.js, Next.js, Vue.js, TypeScript, JavaScript, Redux Toolkit, TanStack Query, Tailwind CSS, jQuery",
+      "React.js, Next.js, Vue.js, TypeScript, JavaScript, React Hook Form, Zod, Redux Toolkit, TanStack Query, Tailwind CSS, jQuery",
   },
   {
     title: "Backend Development",
@@ -44,7 +44,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "PHP, Laravel, REST APIs, GraphQL, API Architecture, Modular Architecture, Distributed Systems, Event-Driven Systems",
+      "PHP, Laravel, Node.js, TypeScript, Express.js, REST APIs, GraphQL, API Architecture, Modular Architecture, Distributed Systems, Event-Driven Systems",
   },
   {
     title: "Data, Caching & Messaging",
@@ -66,52 +66,10 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "MySQL, Redis, Elasticsearch, RabbitMQ, Query Optimization, Caching, Queues, Rate Limiting",
+      "MySQL, PostgreSQL, Redis, Elasticsearch, RabbitMQ, Query Optimization, Caching, Queues, Rate Limiting",
   },
   {
-    title: "Cloud & DevOps",
-    icon: (
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <path d="M17.5 19H9a6 6 0 1 1 1.5-11.8A6.5 6.5 0 0 1 23 10.5 4.5 4.5 0 0 1 18.5 15H17.5" />
-        <path d="M12 12v6" />
-        <path d="m9.5 15 2.5 3 2.5-3" />
-      </svg>
-    ),
-    skills:
-      "AWS (EC2, S3, RDS), Docker, Vercel, GitHub Actions, GitLab, Linux, CI/CD",
-  },
-  {
-    title: "Testing & Code Quality",
-    icon: (
-      <svg
-        width="20"
-        height="20"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.8"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden="true"
-      >
-        <rect x="4" y="3" width="16" height="18" rx="2" />
-        <path d="m8 12 2.5 2.5L16 9" />
-      </svg>
-    ),
-    skills: "Pest, Jest, PHPStan, Pint, ESLint, Prettier",
-  },
-  {
-    title: "AI & Development Tools",
+    title: "AI & LLM Engineering",
     icon: (
       <svg
         width="20"
@@ -135,7 +93,50 @@ const skillGroups = [
         <circle cx="12" cy="12" r="4" />
       </svg>
     ),
-    skills: "Cursor AI, GitHub Copilot, ChatGPT, Claude",
+    skills:
+      "OpenAI API, LLM Tool Calling, AI Agents, RAG, Embeddings, Vector Search, Pinecone, MCP (Model Context Protocol)",
+  },
+  {
+    title: "Cloud & DevOps",
+    icon: (
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M17.5 19H9a6 6 0 1 1 1.5-11.8A6.5 6.5 0 0 1 23 10.5 4.5 4.5 0 0 1 18.5 15H17.5" />
+        <path d="M12 12v6" />
+        <path d="m9.5 15 2.5 3 2.5-3" />
+      </svg>
+    ),
+    skills:
+      "Docker, AWS (EC2, S3, RDS), Vercel, GitHub Actions, CI/CD, GitLab, Linux",
+  },
+  {
+    title: "Testing & Code Quality",
+    icon: (
+      <svg
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        aria-hidden="true"
+      >
+        <rect x="4" y="3" width="16" height="18" rx="2" />
+        <path d="m8 12 2.5 2.5L16 9" />
+      </svg>
+    ),
+    skills: "Pest, Jest, Vitest, PHPStan, Pint, ESLint, Prettier",
   },
   {
     title: "Engineering Practices",
@@ -159,7 +160,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "System Design, Code Reviews, Agile/Scrum, Sprint Planning, Effort Estimation, Team Mentoring",
+      "Technical Architecture Discussions, Code Reviews, Agile/Scrum, Sprint Planning, Effort Estimation, Team Mentoring",
   },
   {
     title: "Other Skills",
@@ -182,8 +183,7 @@ const skillGroups = [
         <path d="M13.5 12h4" />
       </svg>
     ),
-    skills:
-      "API Integration, Payment Gateways, Search Infrastructure, Performance Optimization, Scalable Architecture",
+    skills: "API Integration, Performance Optimization, Scalable Architecture",
   },
 ];
 
@@ -220,7 +220,8 @@ const Skills = () => {
           </h1>
 
           <p className="mt-2 max-w-2xl text-xs leading-5 text-slate-500 sm:text-sm">
-            A balanced mix of frontend, backend and cloud technologies.
+            A full-stack engineering toolkit spanning modern web development,
+            distributed systems, cloud infrastructure, and AI/LLM engineering.
           </p>
         </div>
 
