@@ -47,7 +47,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    technologies: "PHP, Laravel, REST APIs, GraphQL",
+    technologies: "PHP, Laravel, Node.js, REST APIs, GraphQL",
     icon: (
       <svg
         width="24"
@@ -68,7 +68,7 @@ const techStack = [
   },
   {
     category: "Data & Infrastructure",
-    technologies: "MySQL, Redis, Elasticsearch, RabbitMQ",
+    technologies: "MySQL, PostgreSQL, Redis, Elasticsearch, RabbitMQ",
     icon: (
       <svg
         width="24"
