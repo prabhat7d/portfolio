@@ -47,7 +47,7 @@ const techStack = [
   },
   {
     category: "Backend",
-    technologies: "PHP, Laravel, Node.js, REST APIs, GraphQL",
+    technologies: "PHP, Laravel, Node.js, Nest.js, REST APIs, GraphQL",
     icon: (
       <svg
         width="24"
