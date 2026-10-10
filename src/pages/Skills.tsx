@@ -44,7 +44,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "PHP, Laravel, Node.js, TypeScript, Express.js, REST APIs, GraphQL, API Architecture, Modular Architecture, Distributed Systems, Event-Driven Systems",
+      "PHP, Laravel, Node.js, Nest.js, TypeScript, Express.js, REST APIs, GraphQL, API Architecture, Modular Architecture, Distributed Systems, Event-Driven Systems",
   },
   {
     title: "Data, Caching & Messaging",
