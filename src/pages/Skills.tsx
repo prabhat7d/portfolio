@@ -94,7 +94,7 @@ const skillGroups = [
       </svg>
     ),
     skills:
-      "OpenAI API, LLM Tool Calling, AI Agents, RAG, Embeddings, Vector Search, Pinecone, MCP (Model Context Protocol)",
+      "OpenAI API, LangChain, LangGraph, LLM Tool Calling, AI Agents, RAG, Embeddings, Vector Search, Pinecone, MCP (Model Context Protocol)",
   },
   {
     title: "Cloud & DevOps",
