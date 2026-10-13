@@ -30,6 +30,25 @@ const projects = [
     link: "https://coreneural.com",
   },
   {
+    name: "Auto Task Agent",
+    category: "AI-Powered Task Automation Platform",
+    description:
+      "Built an AI agent platform using Node.js, TypeScript, LangChain, and LangGraph. Developed CareerSync to automate resume-based portfolio updates using GitHub integration. Implemented workflow orchestration, tool execution, validation, and error handling.",
+    image: "/projects/auto-task-agent.png",
+    technologies: [
+      "Node.js",
+      "TypeScript",
+      "LangChain",
+      "LangGraph",
+      "AI Agents",
+      "Workflow Orchestration",
+      "GitHub Integration",
+    ],
+    types: ["AI"],
+    slug: "auto-task-agent",
+    link: "https://github.com/prabhat7d/careersync",
+  },
+  {
     name: "AgentLab",
     category: "AI Agent & MCP Laboratory",
     description:
